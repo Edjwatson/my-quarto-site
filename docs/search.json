@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m Edward Watson, a mathematics student at the ANU with a passion for modelling and statistics, and most importantly AFL. Holy Grail Ratings is a project of mine to model AFL margins, in my opinion Models are about expressing a well quantified opinion about what leads to margins, in my case I run an offensive and defensive ELO system based on scoring shots and expected score."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nimage: “Test.png”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTesting\n\n\nBig Things Coming\n\n\n\nMar 26, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Test/Test.html",
+    "href": "posts/Test/Test.html",
+    "title": "Testing",
+    "section": "",
+    "text": "Welcome! Text will go here Here is a whole lot of writing that I am making up to stress test this container and make sure that the vibe coding is not lying to me because i am highly skeptical of its abilities and i want to makes sure that this will work correctly"
+  },
+  {
+    "objectID": "posts/Drafts/Welcome.html",
+    "href": "posts/Drafts/Welcome.html",
+    "title": "Holy Grail Ratings",
+    "section": "",
+    "text": "title: “Welcome” date: “2025-04-30” categories: [Footy] description: “An introduction to the model” image: “Test.png”\n\n\nWelcome to Holy Grail Ratings. This is a project of mine to try and model AFL margins as best as possible. There’s a long roadmap for this project which I’ll discuss at the end of the post. But for now I think its best to explain how the model currently works and why I’ve made particular choices, and how to interpret the dashboards on the homepage.\nWelcome to Holy Grail Ratings!"
+  }
+]
