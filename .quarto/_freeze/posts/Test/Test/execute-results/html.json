@@ -1,0 +1,12 @@
+{
+  "hash": "2090f6b979824925bb6e549f92f46067",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Watson Gets Testing\"\ndate: \"2025-03-26\"\ncategories: [Dong]\ndescription: \"Big Things Coming\"\n---\n\n\n![](MCG.png){The Melbourne Cricket Ground}\n\nWelcome! Text will go here\n\n\n```{Python}\nfrom reactable import Reactable, embed_css\nfrom reactable.data import cars_93\n\nembed_css()\n\nReactable(\n    cars_93[[\"manufacturer\", \"model\", \"type\", \"price\"]],\n    default_page_size=5,\n    searchable=True,\n    filterable=True,\n)\n\n```\n\n",
+    "supporting": [
+      "Test_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
