@@ -2,9 +2,30 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Holy Grail Ratings",
     "section": "",
-    "text": "I’m Edward Watson, a mathematics student at the ANU with a passion for modelling and statistics, and most importantly AFL. Holy Grail Ratings is a project of mine to model AFL margins, in my opinion Models are about expressing a well quantified opinion about what leads to margins, in my case I run an offensive and defensive ELO system based on scoring shots and expected score."
+    "text": "Welcome to Holy Grail Ratings! Here I provide AFL team ratings and weekly margin forecasts. I use an offensive and defensive ELO (ODELO) system (Read more here) that quantifies the performance of a team’s abilities on each side of the ball relative to the average team at a neutral venue. I plan to post semi-regular content on the development of the model as well as other AFL phenomenon wich interest me."
+  },
+  {
+    "objectID": "about.html#about-hgr",
+    "href": "about.html#about-hgr",
+    "title": "Holy Grail Ratings",
+    "section": "",
+    "text": "Welcome to Holy Grail Ratings! Here I provide AFL team ratings and weekly margin forecasts. I use an offensive and defensive ELO (ODELO) system (Read more here) that quantifies the performance of a team’s abilities on each side of the ball relative to the average team at a neutral venue. I plan to post semi-regular content on the development of the model as well as other AFL phenomenon wich interest me."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Holy Grail Ratings",
+    "section": "About Me",
+    "text": "About Me\nI’m Edward Watson, an undergraduate at the Australian National University, studying Mathematial Finance and Politics, Philosophy and Economics. I’m intereted in statistics and financial and betting markets, and most importantly AFL. The goal of HGR is to combine these interests to create a margin model with an edge on betting markets. Outside of my stuides I work as a management consultant and enjoy swimming and running.\nIf you’re interested in talking, send me a message at holygrailratings@gmail.com or on X at @HG_Ratings."
+  },
+  {
+    "objectID": "about.html#favourite-resources",
+    "href": "about.html#favourite-resources",
+    "title": "Holy Grail Ratings",
+    "section": "Favourite Resources",
+    "text": "Favourite Resources\nA collection of resources that I’ve found helpful in the process of developing my model.\n\nMatter Of Stats\nWheelo Ratings\nAFL Lab"
   },
   {
     "objectID": "posts/index.html",

@@ -1041,7 +1041,7 @@ $theme-name: null !default;
 
 
 //Colours//
-$green:#66a558;
+$green:#2;
 $gold: #ffd864;
 $red : #D14D41 ; 
 
@@ -1050,15 +1050,16 @@ html body {
   background-color: #f5eedc;
 }
 
-html footer {
-  background-color: #f5eedc;
+.nav-footer {
+  background-color: #f5eedc !important;
 }
-
-
-
 //Navbar//
 $navbar-bg: $green ;
 $navbar-fg: $gold ;
+
+//Blog Styling//
+
+
 
 /* Make navbar a flexbox and center items */
 /* Define the default navbar background color */
@@ -1068,12 +1069,15 @@ padding: 10px 20px;
 }
 
 .navbar-brand img {
-max-height: 50px;
+max-height: 100px;
 }
 
 .navbar .nav-link {
-  font-size: 28px;
+  font-family: 'Editorial New Regular';
+  font-size: 36px;
 }
+
+
 
 
 
@@ -1194,7 +1198,7 @@ max-height: 50px;
     border-bottom: none;
     box-shadow: none;
     margin-bottom: 10px;
-    font
+    font-family: 'Editorial New Regular'
 }
 
 .prediction-box,
@@ -1222,6 +1226,14 @@ max-height: 50px;
   vertical-align: middle !important;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+body {
+  font-family: 'PPFormula';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Editorial New Regular';
 }
 
 // Heading font size customization
