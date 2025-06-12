@@ -1041,8 +1041,8 @@ $theme-name: null !default;
 
 
 //Colours//
-$green:#2;
-$gold: #ffd864;
+$green:#65a458;
+$gold: #ffd861;
 $red : #D14D41 ; 
 
 //Set BG Colour//
@@ -1051,14 +1051,19 @@ html body {
 }
 
 .nav-footer {
-  background-color: #f5eedc !important;
+  background-color: #f5eedc!important;
 }
 //Navbar//
 $navbar-bg: $green ;
 $navbar-fg: $gold ;
 
 //Blog Styling//
-
+/* Set base body font */
+ body {
+  font-family: 'Editorial New Regular';
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 
 /* Make navbar a flexbox and center items */
@@ -1069,7 +1074,7 @@ padding: 10px 20px;
 }
 
 .navbar-brand img {
-max-height: 100px;
+max-height: 75px;
 }
 
 .navbar .nav-link {
@@ -1229,11 +1234,45 @@ max-height: 100px;
 }
 
 body {
-  font-family: 'PPFormula';
+  font-family: 'Editorial New Regular';
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Editorial New Regular';
+}
+
+.footnotes {
+  font-size: 1.1em;  /* Make footnotes smaller */
+  background-color: #f5eedc;
+}
+
+#quarto-appendix.default {
+    background-color: #fff;
+    padding-top: 0;
+    margin-top: 2em;
+    border-top: 0px;
+}
+
+/*Link Styling*/
+/* Unvisited links */
+a {
+  color: $green ;  /* or any hex/rgb color */
+}
+
+/* Visited links */
+a:visited {
+  color: $green;
+}
+
+/* Hover state */
+a:hover {
+  color: #yellow;
+  text-decoration: none;  /* Optional */
+}
+
+/* Active link (when clicked) */
+a:active {
+  color: #;
 }
 
 // Heading font size customization

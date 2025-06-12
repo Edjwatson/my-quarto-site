@@ -19,16 +19,16 @@ import pandas as pd
 from mizani.palettes import gradient_n_pal
 import numpy as np
 
-blog_post_path = 'posts/Test/Test'  # Path to your specific blog post file
-blog_post_name = 'Test'  # Set the title you want for the blog post card
+blog_post_path = 'posts/Intro/Introduction to ODELO'  # Path to your specific blog post file
+blog_post_name = 'Introduction to ODELO'  # Set the title you want for the blog post card
 blog_post_url = f"{blog_post_path.replace(' ', '-')}.html"  # You might need to adjust the URL structure
 
 # Read snippet from blog post
-with open("posts/test/test.qmd", "r", encoding="utf-8") as f:
+with open("posts/Intro/Introduction to ODELO.qmd", "r", encoding="utf-8") as f:
     lines = f.readlines()
 
 # Read snippet from blog post
-with open("posts/test/test.qmd", "r", encoding="utf-8") as f:
+with open("posts/Intro/Introduction to ODELO.qmd", "r", encoding="utf-8") as f:
     lines = f.readlines()
 
 # Skip YAML front matter, blank lines, and image lines
@@ -187,7 +187,7 @@ to_widget(
                     [
                         tags.div(
                             [
-                                tags.h2("Predictions For Round 11", style="text-align: center; font-size: 32px; margin: 0; padding-top: 8.5px"),
+                                tags.h2("Predictions For Round 14", style="text-align: center; font-size: 32px; margin: 0; padding-top: 8.5px"),
                                 pred_table
                             ],
                             class_="prediction-box"
