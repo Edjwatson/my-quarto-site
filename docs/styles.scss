@@ -213,24 +213,3 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 0px;
 }
 
-/*Link Styling*/
-/* Unvisited links */
-a {
-  color: $green ;  /* or any hex/rgb color */
-}
-
-/* Visited links */
-a:visited {
-  color: $green;
-}
-
-/* Hover state */
-a:hover {
-  color: $gold;
-  text-decoration: none;  /* Optional */
-}
-
-/* Active link (when clicked) */
-a:active {
-  color: $green;
-}
