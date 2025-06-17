@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a41766e151f4903c3f2d11b83e26e738.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-68f1c3147b5921df35851c591e7644e6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -196,7 +196,7 @@ window.Quarto = {
 <section id="the-importance-of-scoring-shots" class="level1">
 <h1>The Importance of Scoring Shots</h1>
 <p>To introduce my model for AFL margins consider one question - what is the principal component of a football game’s margin? If you asked head coaches you’d probably get a variety of answers reflecting gameplan - maybe pressure rating, uncontested marks, handball/kick ratio. My model takes a simpler view which relies on a heuristic observation about AFL, an average game has an extremely high number of interactions. A key result? Events at the extremes tend to cancel each other, for every goal conceded from an intercepted kick-in there’s a set shot from a questionable free kick. The implication for AFL is that scoring is relatively stable, extreme events tend to have a minimal effect on the final margin. What matters most then? – scoring shots, any attempt on goal, whether a major, behind or clanger <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Here’s a chart stating the obvious teams who get more shots than their opponent win far more,</p>
-<div id="4f97928c" class="cell" data-execution_count="2">
+<div id="803a0c44" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -205,7 +205,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="ac7c7920" class="cell" data-execution_count="3">
+<div id="7644f40a" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -215,7 +215,7 @@ window.Quarto = {
 </div>
 </div>
 <p>A logical question is, what about accuracy? Are the best teams more accurate and the worst more inaccurate, scoring shot differentials potentially just represent a good teams dominance on the field. Surprisingly, teams good or bad rarely manage to outperform or underperform compared to the league average scoring shot conversion. Check out this graph of each teams conversion compared to the league average.</p>
-<div id="b324f8e5" class="cell" data-execution_count="4">
+<div id="9b26ffe5" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -250,7 +250,7 @@ window.Quarto = {
 <section id="k-factor" class="level3">
 <h3 class="anchored" data-anchor-id="k-factor">K-factor</h3>
 <p>K-factor weights a team’s actual performance compared to their expected performance and determines the size of rating changes. I use an exponentially decaying K-factor dependent on the proportion of the season passed. This reflects some obvious observations about AFL, early in the season there’s not much known about a team’s ability, there’s likely personnel change, game plan change, aging. Similarly, towards the end of the season there is more certainty around a team’s ability, the prevalence of dead rubber games in the last few rounds also gives us reason to not move ratings more. Currently I have lazily optimised this by finding a co-efficient which minimises MAE but this will need improvement and currently performs worse than a constant K-factor. It looks like this,</p>
-<div id="3ed3b7bd" class="cell" data-execution_count="5">
+<div id="62889533" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -267,7 +267,7 @@ window.Quarto = {
 <section id="days-to-average" class="level3">
 <h3 class="anchored" data-anchor-id="days-to-average">Days to average</h3>
 <p>This is a simple measure to account for long term changes in the average score, the average score of AFL is relatively stable, with no major short term variations with the exception of the covid season.</p>
-<div id="f212293b" class="cell" data-execution_count="6">
+<div id="0fb5bc43" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -282,7 +282,7 @@ window.Quarto = {
 <section id="win-probability" class="level1">
 <h1>Win Probability</h1>
 <p>I mentioned earlier that chess uses a set formula to convert Elo ratings into implied win probabilities, so does ODELO. Chess Elo’s conversion to win probabilities relies on a key assumption that player performance in a particular game is normally distributes (though now often it is assumed to be log-normal). This forms the basis of Chess’ win probability calculation. I have chosen a different approach fitting a logistic regression of predicted margins to final margins, this returns a sigmoid coefficient.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> This returns a sigmoid function and coefficient which yields this nice graph showing the implied win probability given an expected margin.</p>
-<div id="bb6eedf0" class="cell" data-execution_count="7">
+<div id="5bda79bd" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
